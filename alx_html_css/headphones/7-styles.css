@@ -1,0 +1,459 @@
+/*-----------------Global styles------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-white: #FFFFFF;
+    --font-orange: #FF6565;
+    --font-dark-blue: #071629;
+}
+
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+header {
+    color: var(--font-white);
+    display: grid;
+    grid-template-rows: minmax(150px, auto) auto;
+    padding: 30px;
+    background-image: url(/alx_html_css/headphones/header-assests/images/headphones_hero_1.jpg);
+    text-align: center;
+    min-height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* styling the logo image */
+img {
+    justify-self: center;
+    height: 32px;
+    width: 160px;
+    cursor: pointer;
+}
+
+/* --------------styling the navigation--------------- */
+
+/* styling the nav links */
+
+.nav-links li {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--font-white);
+    font-weight: bold;    
+}
+
+/* styling the open and close navbar and */
+
+/* Styling the nav icons */
+.nav-links-container i {
+    position: absolute;
+    font-size: 25px;
+    left: 35px;
+    top: 35px;
+}
+
+.nav-links li a{
+    display: none;
+}
+
+
+.nav-checker:checked ~ li a {
+    display: block; 
+}
+
+
+#checker:checked ~ label #bars {
+    display: none;
+}
+
+label #close {
+    display: none;
+}
+
+#checker:checked ~ label #close {
+    display: block;
+}
+
+.nav-checker {
+    display: none;
+}
+
+/* Adding a hover effect to the nav links */
+
+.nav-links li a:hover{
+    color: var(--font-orange);
+    scale: 1.2;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+/* styling the hero section */
+
+.hero-container {
+    display: grid;
+}
+
+.hero-section h3 {
+    margin: 25px 0;
+}
+
+.hero-section button {
+    width: 162px;
+    height: 45px;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--font-orange);
+    color: var(--font-white);
+    font-weight: bold;
+}
+
+/* Added a hover and animations effect to the button  */
+.hero-section button:hover {
+    cursor: pointer;
+    scale: 1.2;
+    transition: all 500ms ease-in-out;
+}
+
+.hero-container p {
+    line-height: 26px;
+    max-width: 60%;
+    align-self: center;
+    justify-self: center;
+}
+
+/* what-we-do-container styles */
+
+.what-we-do-container {
+    display: grid;
+    grid-template-rows: 400px auto;
+    text-align: center;
+    margin: 2rem 0 5rem 0;
+}
+
+.what-we-do-container img {
+    width: 94px;
+    height: 65px;
+}
+
+.what-we-do-text {
+    display: grid;
+    align-self: center;
+}
+
+.what-we-do-text h1 {
+    margin: 35px ;
+    font-size: 32px;
+}
+
+.what-we-do-text p {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 60%;
+    padding-bottom: 5rem;
+    justify-self: center;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 5.5rem;
+}
+
+.grid-container h3 {
+    padding: 20px;
+}
+
+.grid-container {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* Adding animations to the images */
+
+.frequency-container:hover {
+    scale: 1.2;
+    background-color: #f9ecec;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.video-container:hover {
+    scale: 1.2;
+    background-color: #f9ecec;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.music-container:hover {
+    scale: 1.2;
+    background-color: #f9ecec;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.hearing-container:hover {
+    scale: 1.2;
+    background-color: #f9ecec;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+/*  results section styles */
+
+.results-container {
+    display: grid;
+    grid-template-rows: 150px auto ;
+    text-align: center;
+    min-height: 1490px;
+    background-image: url("/alx_html_css/headphones/header-assests/images/headphones_hero_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--font-white);
+    padding: 30px;
+}
+
+.results-grid {
+    display: grid;
+}
+
+.results-container img {
+    height: 180px;
+    width: 180px;
+}
+
+.results-container h1 {
+    align-self: center;
+}
+
+.results-container p {
+   font-size: 16px;
+   line-height: 26px;
+   max-width: 60%;
+   justify-self: center;
+}
+
+/* Positioning the text in the pentagon */
+.percentage {
+    display: grid;
+    position: relative;
+    top: 40px;
+}
+
+.percentage h3 {
+    font-weight: bold;
+    font-size: 46px;
+    padding-bottom: 10px;
+}
+
+.percentage p {
+    font-size: 14px;
+}
+
+/* Drawing a pentagon */
+.pentagon {
+    width: 180px;
+    height: 180px;
+    background: var(--font-orange);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: 50px auto;
+}
+
+/* Added animations to the pentagon */
+
+.pentagon:hover {
+    color: var(--font-orange);
+    scale: 1.2;
+    color: #f1d8d8;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+/* Contact section styles */
+
+.contact-container {
+    display: grid; 
+    grid-template-columns: auto minmax(100px, 320px) auto;
+    min-height: 500px;
+}
+
+.form {
+    max-height: 400px;
+    display: grid;
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.name , .email, .message {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.name, .email, .message {
+    padding-bottom: 20px;
+}
+
+.form label {
+    padding-bottom: 10px;
+}
+
+.form input {
+    height: 30px;  
+}
+
+.form button {
+    margin-top: 20px;
+    max-width: 162px;
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--font-white);
+    justify-self: center;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--font-orange);
+}
+
+/* Added animations to the form button */
+
+.form button:hover {
+    cursor: pointer;
+    scale: 1.2;
+    transition: all 500ms ease-in-out;
+}
+
+/* -----------FOOTER STYLES----------------- */
+
+.footer-container {
+    min-height: 250px;
+    display: grid;
+    background-color: var(--font-dark-blue);
+    color: var(--font-white);
+}
+
+.footer-logo {
+    align-self: end;
+    justify-self: center;
+}
+
+.footer-icons {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-copyright {
+    align-self: start;
+    justify-self: center;
+    font-size: 12px;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+
+
+
+/* For tablet view above 481px screen size */
+
+@media (min-width: 480px) { 
+    .nav-links-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links li a{
+        display: block;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .what-we-do-container {
+        min-height: 700px;
+    }
+
+    .results-container {
+        min-height: 870px;
+        grid-template-rows: 150px 250px auto;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-logo {
+        align-self: center;
+        align-self: end;
+    }
+
+    .footer-copyright {
+        grid-column: 2/3;
+        align-self: end;
+        padding-bottom: 3rem;
+    }
+
+    .footer-icons {
+        grid-column: 3/4;
+        align-self: end;
+    }
+
+ }
+
+
+
+/* For laptop view above 481px screen size */
+
+ @media (min-width: 768px) { 
+   header {
+     padding: 40px 100px;
+   }
+
+   .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    }
+
+    .what-we-do-container {
+        min-height: 500px;
+    }
+
+    .results-container {
+        min-height: 300px;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+ }
+

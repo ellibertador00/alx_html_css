@@ -1,0 +1,94 @@
+:root {
+    --font-white: #FFFFFF;
+    --font-orange: #FF6565;
+    --font-dark-blue: #071629;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------Global styles------------------------------ */
+
+body {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    color: var(--font-white);
+}
+
+header {
+    display: grid;
+    grid-template-rows: minmax(250px, auto) auto ;
+    padding: 30px;
+    background-image: url(/alx_html_css/headphones/header-assests/images/headphones_hero_1.jpg);
+    text-align: center;
+    min-height: 870px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    justify-self: center;
+    height: 32px;
+    width: 160px;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--font-white);
+    font-weight: bold;    
+}
+                     
+.hero-container {
+    display: grid;
+}
+
+.hero-section h3 {
+    margin: 25px 0;
+}
+
+.hero-section button {
+    width: 162px;
+    height: 45px;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--font-orange);
+}
+
+.hero-container p {
+    line-height: 26px;
+}
+
+/* For laptop view above 481px screen size */
+@media (min-width: 481px) { 
+    .nav-links-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+
+ }
+
+/* For laptop view above 481px screen size */
+
+ @media (min-width: 768px) { 
+   header {
+     padding: 40px 100px;
+   }
+
+
+ }
+
